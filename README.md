@@ -77,12 +77,12 @@ El método mensajesResultados() contiene la lógica simple para decidir qué men
 
 <img width="244" height="549" alt="SegundaPantalla_Tablero_EFM" src="https://github.com/user-attachments/assets/e61d0bd4-b1f1-464a-b6e3-1c09a910c440" />
 
-## Archivo strings.xml
+### Archivo strings.xml
 
-## Propósito del archivo
+#### Propósito del archivo
 El archivo `strings.xml` contiene todas las cadenas de texto utilizadas en la aplicación. Centralizar los textos aquí permite un mejor mantenimiento y facilita la traducción a otros idiomas en el futuro.
 
-## Contenido del archivo
+#### Contenido del archivo
 - **app_name**: "Tablero Baloncesto" - Nombre de la aplicación
 - **local_team**: "LOCAL" - Etiqueta para el equipo de casa
 - **visitor_team**: "VISITANTE" - Etiqueta para el equipo visitante
@@ -94,7 +94,7 @@ El archivo `strings.xml` contiene todas las cadenas de texto utilizadas en la ap
 - **final_score**: "Puntuación final" - Título en la pantalla de resultados
 - **back_to_game**: "Volver al juego" - Texto del botón para regresar
 
-## Ventajas de este enfoque
+#### Ventajas de este enfoque
 Al tener todos los textos en un solo archivo, cualquier cambio se refleja automáticamente en toda la aplicación. Además, facilita la internacionalización si decido agregar soporte para otros idiomas.
 
 ## Problemas Encontrados y Soluciones
