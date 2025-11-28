@@ -77,7 +77,7 @@ El método mensajesResultados() contiene la lógica simple para decidir qué men
 
 <img width="244" height="549" alt="SegundaPantalla_Tablero_EFM" src="https://github.com/user-attachments/assets/e61d0bd4-b1f1-464a-b6e3-1c09a910c440" />
 
-# Archivo strings.xml
+## Archivo strings.xml
 
 ## Propósito del archivo
 El archivo `strings.xml` contiene todas las cadenas de texto utilizadas en la aplicación. Centralizar los textos aquí permite un mejor mantenimiento y facilita la traducción a otros idiomas en el futuro.
