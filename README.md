@@ -97,6 +97,39 @@ El archivo `strings.xml` contiene todas las cadenas de texto utilizadas en la ap
 #### Ventajas de este enfoque
 Al tener todos los textos en un solo archivo, cualquier cambio se refleja automáticamente en toda la aplicación. Además, facilita la internacionalización si decido agregar soporte para otros idiomas.
 
+### Archivo AndroidManifest.xml
+
+#### Propósito del archivo
+El archivo `AndroidManifest.xml` es el archivo de configuración principal de la aplicación Android. Define la estructura esencial de la app, sus componentes, permisos y características requeridas.
+
+#### Contenido del archivo
+
+##### Configuración de la aplicación
+- **Nombre del paquete**: `com.example.tablero_efm` - Identificador único de la aplicación
+- **Icono de la aplicación**: `@mipmap/ic_launcher` - Icono que aparece en el dispositivo
+- **Nombre visible**: "Enrique de la Fuente Mendez" - Nombre que ven los usuarios
+- **Tema**: `@style/Theme.AppCompat.Light.DarkActionBar` - Estilo visual de la interfaz
+
+#### Activities declaradas
+
+**MainActivity**
+- **Actividad principal**: Es el punto de entrada de la aplicación
+- **Filtro de intent**: Configurada como `LAUNCHER` para que aparezca en el menú de aplicaciones
+- **Exportada**: `true` - Permite que otras aplicaciones la puedan iniciar
+
+**ScoreActivity**
+- **Actividad secundaria**: Muestra los resultados finales del partido
+- **Actividad padre**: `MainActivity` - Define la jerarquía de navegación
+- **No exportada**: Solo puede ser iniciada desde dentro de la aplicación
+
+### Características de la aplicación
+- **Backup automático**: Habilitado con reglas personalizadas en `@xml/backup_rules`
+- **Soporte RTL**: `true` - Compatible con idiomas de derecha a izquierda
+- **Extracción de datos**: Configurada en `@xml/data_extraction_rules`
+
+### Ventajas de este enfoque
+Al centralizar toda la configuración esencial en el Manifest, se mantiene un control centralizado sobre los componentes de la aplicación. Esto facilita la gestión de permisos, la configuración de actividades y asegura que el sistema Android comprenda correctamente la estructura de la app.
+
 ## Problemas Encontrados y Soluciones
 
 ### Problema con la Rotación de Pantalla
